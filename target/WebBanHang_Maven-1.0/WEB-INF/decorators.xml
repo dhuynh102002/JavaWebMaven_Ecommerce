@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<sitemesh>
+    <!--     Định nghĩa các decorator -->
+    <decorators defaultdir="/decorators">
+        <excludes>
+            <pattern>/api*</pattern>
+        </excludes>
+    
+        <decorator name="admin" page="/decorators/admin.jsp">
+            <pattern>/admin*</pattern>
+        </decorator>
+    
+        <decorator name="web" page="/decorators/web.jsp">
+            <pattern>/*</pattern>
+        </decorator>
+        
+        <decorator name="authen" page="/decorators/authen.jsp">
+            <pattern>/authen</pattern>
+        </decorator>
+        
+
+    </decorators>
+</sitemesh>
+
